@@ -47,7 +47,7 @@ int main() {
 		}
 
 		if (resultado != NULL) {
-			cout << "O resultado e "<<resultado;
+			cout << "O resultado e "<<resultado<<"\n\n\n";
 		}
 		else {
 			break;
