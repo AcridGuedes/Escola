@@ -7,7 +7,7 @@ int main() {
 	while (true) {
 		int opcao;
 		float n1, n2, resultado;
-		cout << "Bem vindo a calculadora! Insira a sua escolha para comecar.";
+		cout << "Bem vindo a calculadora! Insira a sua escolha para comecar.\n";
 		cout << "1-Soma\n";
 		cout << "2-subtracao\n";
 		cout << "3-Multiplicacao\n";
@@ -39,10 +39,10 @@ int main() {
 			case 5:
 				resultado = pow(n1, n2);
 			case 7:
-				resultado = (n1 + n2) / 2;
-			default:
+				resultado = (n1 + n2) / 2;				
+			}
+			if(!resultado){
 				cout << "Opcao invalida! Tente denovo.";
-				resultado = NULL;
 			}
 		}
 
