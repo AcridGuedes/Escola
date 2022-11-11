@@ -1,106 +1,96 @@
 #include <iostream>
 #include <math.h>
 
-using namespace std;
-
-int main() {
+int main(){
 	while (true) {
-		int opcao, qntd_nr;
-		float n1, n2, n3;
+		using namespace std;
 
-		cout << "Escolha quantos numeros quer utilizar -> ";
-		cin >> qntd_nr;
-		switch (qntd_nr) {
+		int op, nx, ny;
+		float n1, n2;
+
+		cout << "\nBem vindo a calculadora do Ivo, Gui e Joao!\n\n";
+		cout << "1-Soma\n";
+		cout << "2-Subtracao\n";
+		cout <<"3-Multiplicacao\n";
+		cout << "4-Divisão\n";
+		cout << "5-Potencia\n";
+		cout << "6-Raiz Quadrada\n";
+		cout << "7-Media\n";
+		cout << "8-Resto da divisao\n\n";
+		cout << "Para comecar escolha uma operacao -> ";
+		cin >> op;
+				switch (op) {
 		case 1:
-			cout << "1-Raiz Quadrada\n\n";
-			cout << "Escolha a operacao -> ";
-			cin >> opcao;
-			cout << "Escolha o numero a utilizar -> ";
+			cout << "Escolha os numeros a utilizar\n\n";
+			cout << "1-> ";
 			cin >> n1;
-			cout << "O resultado e ->" << sqrt(n1) << "\n";
+			cout << "2-> ";
+			cin >> n2;
+			cout << "O resultado e -> " << n1 + n2;
 			break;
 		case 2:
-			cout << "1-Soma\n";
-			cout << "2-Subtracao\n";
-			cout << "3-Multiplicacao\n";
-			cout << "4-Divisao\n";
-			cout << "5-Potencia\n";
-			cout << "6-Raiz Quadrada\n";
-			cout << "7-Media\n\n";
-			cout << "Escolha a operacao -> ";
-			cin >> opcao;
-			cout << "\n\n";
 			cout << "Escolha os numeros a utilizar\n\n";
-			cout << "1 -> ";
+			cout << "1-> ";
 			cin >> n1;
-			cout << "2 -> ";
+			cout << "2-> ";
 			cin >> n2;
-			switch (opcao) {
-			case 1:
-				cout << "\nO resultado e " << n1 + n2;
-				break;
-			case 2:
-				cout << "\nO resultado e " << n1 - n2;
-				break;
-			case 3:
-				cout << "\nOresultado e " << n1 * n2;
-				break;
-			case 4:
-				cout << "\nO resultado e " << n1 / n2;
-				break;
-			case 5:
-				cout << "\nO resultado e" << pow(n1, n2);
-				break;
-			case 6:
-				cout << "\nO resultado e " << sqrt(n1) << " ; " << sqrt(n2);
-				break;
-			case 7:
-				cout << "\nO resultado e" << (n1 + n2) / 2;
-				break;
-			}
-		break;
+			cout << "O resultado e -> " << n1 - n2;
+			break;
 		case 3:
-			cout << "1-Soma\n";
-			cout << "2-Subtracao\n";
-			cout << "3-Multiplicacao\n";
-			cout << "4-Divisao\n";
-			cout << "5-Potencia\n";
-			cout << "6-Raiz Quadrada\n";
-			cout << "7-Media\n\n";
-			cout << "Escolha a operacao -> ";
-			cin >> opcao;
-			cout << "\n\n";
 			cout << "Escolha os numeros a utilizar\n\n";
-			cout << "1 -> ";
+			cout << "1-> ";
 			cin >> n1;
-			cout << "2 -> ";
+			cout << "2-> ";
 			cin >> n2;
-			cout << "3 -> ";
-			cin >> n3;
-			switch (opcao) {
-			case 1:
-				cout << "\nO resultado e " << n1 + n2 + n3;
-				break;
-			case 2:
-				cout << "\nO resultado e " << n1 - n2 - n3;
-				break;
-			case 3:
-				cout << "\nO resultado e " << n1 * n2* n3;
-				break;
-			case 4:
-				cout << "\nO resultado e " << n1 / n2 / n3;
-				break;
-			case 6:
-				cout << "\nO resultado e " << sqrt(n1) << " ; " << sqrt(n2) << " ; " << sqrt(n3);
-				break;
-			case 7:
-				cout << "\nO resultado e " << (n1 + n2 + n3) / 3;
-				break;
-			}
+			cout << "O resultado e -> " << n1 * n2;
+			break;
+		case 4:
+			cout << "Escolha os numeros a utilizar\n\n";
+			cout << "1-> ";
+			cin >> n1;
+			cout << "2-> ";
+			cin >> n2;
+			cout << "O resultado e -> " << n1 / n2;
+			break;
+		case 5:
+			cout << "Escolha os numeros a utilizar\n\n";
+			cout << "1-> ";
+			cin >> n1;
+			cout << "2-> ";
+			cin >> n2;
+			cout << "O resultado e -> " << pow(n1, n2);
+			break;
+		case 6:
+			cout << "Escolha os numeros a utilizar\n\n";
+			cout << "1-> ";
+			cin >> n1;
+			cout << "2-> ";
+			cin >> n2;
+			cout << "O resultado e -> " << sqrt(n1) << ";" << sqrt(n2);
+			break;
+		case 7:
+			cout << "Escolha os numeros a utilizar\n\n";
+			cout << "1-> ";
+			cin >> n1;
+			cout << "2-> ";
+			cin >> n2;
+			cout << "O resultado e -> " << (n1 + n2) / 2;
+			break;
+		case 8:
+			cout << "Escolha os numeros a utilizar\n\n";
+			cout << "1-> ";
+			cin >> nx;
+			cout << "2-> ";
+			cin >> ny;
+			cout << "O resultado e -> " << nx % ny;
+			break;
 		}
-		cout << "\n\n";
+
+				cout << "\n\nObrigado por usar esta calculadora mal programada <3!\n\n";
+				cout << "\n<=========================================================>\n\n";
 	}
-	return 0;
+
+		return 0;
 	
 
 }
