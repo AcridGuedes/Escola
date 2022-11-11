@@ -106,8 +106,9 @@ int main() {
             case 6:
                 cout << "\nO resultado e " << (n1 + n2 + n3) / 3;
                 break;
-            break;
+          
             }
+                break;
             
         case 4:
             cout << "1-Soma\n";
