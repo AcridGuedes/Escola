@@ -10,12 +10,12 @@ using namespace std;
 int main() {
     while (true) {
         int opcao, qntd_nr;
-        float n1, n2, n3, n4;
+        float n1, n2, n3, n4, n5;
 
 
 
-       cout << "\nCalculadora criada por Ivo, Guilherme e Joao\n";
-        cout << "\nEscolha quantos numeros quer utilizar -> ";
+        cout << "\nCalculadora criada por Ivo, Guilherme e Joao\n";
+        cout << "\nEscolha quantos numeros quer utilizar (Pode utilizar ate 5 numeros diferentes) -> ";
         cin >> qntd_nr;
         switch (qntd_nr) {
         case 1:
@@ -66,10 +66,10 @@ int main() {
                 cout << "\nO resultado e " << (n1 + n2) / 2;
                 break;
             case 8:
-                cout <<"\nFalta acabar";
+                cout << "\nFalta acabar";
                 break;
             }
-        break;
+            break;
         case 3:
             cout << "1-Soma\n";
             cout << "2-Subtracao\n";
@@ -95,7 +95,7 @@ int main() {
                 cout << "\nO resultado e " << n1 - n2 - n3;
                 break;
             case 3:
-                cout << "\nO resultado e " << n1 * n2* n3;
+                cout << "\nO resultado e " << n1 * n2 * n3;
                 break;
             case 4:
                 cout << "\nO resultado e " << n1 / n2 / n3;
@@ -106,10 +106,10 @@ int main() {
             case 6:
                 cout << "\nO resultado e " << (n1 + n2 + n3) / 3;
                 break;
-          
+
             }
-                break;
-            
+            break;
+
         case 4:
             cout << "1-Soma\n";
             cout << "2-Subtracao\n";
@@ -129,7 +129,7 @@ int main() {
             cin >> n3;
             cout << "4 -> ";
             cin >> n4;
-            switch (opcao) { 
+            switch (opcao) {
             case 1:
                 cout << "\nO resultado e " << n1 + n2 + n3 + n4;
                 break;
@@ -146,16 +146,58 @@ int main() {
                 cout << "\nO resultado e " << sqrt(n1) << " ; " << sqrt(n2) << " ; " << sqrt(n3) << " ; " << sqrt(n4);
                 break;
             case 6:
-                cout << "\nO resultado e " << (n1 + n2 + n3) / 3;
+                cout << "\nO resultado e " << (n1 + n2 + n3 + n4) / 4;
                 break;
             }
-            
-        
-            
+            break;
+        case 5:
+            cout << "1-Soma\n";
+            cout << "2-Subtracao\n";
+            cout << "3-Multiplicacao\n";
+            cout << "4-Divisao\n";
+            cout << "5-Raiz Quadrada\n";
+            cout << "6-Media\n\n";
+            cout << "Escolha a operacao -> ";
+            cin >> opcao;
+            cout << "\n\n";
+            cout << "Escolha os numeros a utilizar\n\n";
+            cout << "1 -> ";
+            cin >> n1;
+            cout << "2 -> ";
+            cin >> n2;
+            cout << "3 -> ";
+            cin >> n3;
+            cout << "4 -> ";
+            cin >> n4;
+            cout << "5 -> ";
+            cin >> n5;
+            switch (opcao) {
+            case 1:
+                cout << "\nO resultado e " << n1 + n2 + n3 + n4 + n5;
+                break;
+            case 2:
+                cout << "\nO resultado e " << n1 - n2 - n3 - n4 - n5;
+                break;
+            case 3:
+                cout << "\nO resultado e " << n1 * n2 * n3 * n4 * n5;
+                break;
+            case 4:
+                cout << "\nO resultado e " << n1 / n2 / n3 / n4 / n5;
+                break;
+            case 5:
+                cout << "\nO resultado e " << sqrt(n1) << " ; " << sqrt(n2) << " ; " << sqrt(n3) << " ; " << sqrt(n4) << " ; " << sqrt(n5);
+                break;
+            case 6:
+                cout << "\nO resultado e " << (n1 + n2 + n3 + n4 + n5) / 5;
+                break;
+            }
+            break;
+
+
         }
         cout << "\nObrigado por usar a calculadora";
         cout << "\n\n";
     }
     return 0;
-   
+
 }
