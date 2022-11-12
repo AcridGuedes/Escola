@@ -7,6 +7,7 @@ int main()
 	while(true){
 	int choice, op;
 	float nums[5], total;
+	
 	cout << "Welcome to the worst calculator. Have fun!!\n";
 	cout << "1-Sum(Working)\n";
 	cout << "2-Subtraction(Work in progress)\n";
@@ -26,9 +27,9 @@ int main()
 			cin >> nums[i];
 
 		}
-		for (int x = 0; x < choice; x++){
+		for (int x = 0; x < choice; x++) {
 			total = total + nums[x];
-	}
+		}
 
 		cout << "O total e " << total << "\n\n";
 		break;
@@ -51,10 +52,10 @@ int main()
 			cin >> nums[i];
 
 		}
-		for (int x = 0; x < choice; x++){
+		for (int x = 0; x < choice; x++) {
 			total = total * nums[x];
-	}
-		
+		}
+
 		cout << "O total e " << total << "\n\n";
 		break;
 	case 4:
@@ -64,7 +65,7 @@ int main()
 			cin >> nums[i];
 
 		}
-		cout << "O resultado e > " << nums[0] / nums[1]<<"\n\n";
+		cout << "O resultado e > " << nums[0] / nums[1] << "\n\n";
 
 		break;
 	case 5:
@@ -75,11 +76,10 @@ int main()
 
 		}
 		for (int x = 0; x < choice; x++)
-			total = nums[0] + nums[1];
-		cout << "The result is " << total / choice<<"\n\n";
+			total = total+ nums[x];
+		cout << "The result is " << total / choice << "\n\n";
 
 		break;
-	
 	}
 	}
 	 return 0;
